@@ -1,0 +1,15 @@
+artifact_uri: c:\Users\jhoan\Downloads\milflow-deploy\Taller_4\src\mlruns/e52a427bb4fe4d138c6cd05fa5748bb9/artifacts
+end_time: 1746784071299
+entry_point_name: ''
+experiment_id: '407550204340860756'
+lifecycle_stage: active
+run_id: e52a427bb4fe4d138c6cd05fa5748bb9
+run_name: zealous-moose-379
+run_uuid: e52a427bb4fe4d138c6cd05fa5748bb9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746784067529
+status: 4
+tags: []
+user_id: jhoan
