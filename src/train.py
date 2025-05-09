@@ -16,9 +16,9 @@ print(f"--- Debug: Initial CWD: {os.getcwd()} ---")
 # Usar rutas absolutas dentro del workspace del runner
 workspace_dir = os.getcwd() # Debería ser /home/runner/work/mlflow-deploy/mlflow-deploy
 mlruns_dir = os.path.join(workspace_dir, "mlruns")
-tracking_uri = "file://" + os.path.abspath(mlruns_dir)
+tracking_uri = os.path.abspath(mlruns_dir)
 # Definir explícitamente la ubicación base deseada para los artefactos
-artifact_location = "file://" + os.path.abspath(mlruns_dir)
+artifact_location = os.path.abspath(mlruns_dir)
 
 print(f"--- Debug: Workspace Dir: {workspace_dir} ---")
 print(f"--- Debug: MLRuns Dir: {mlruns_dir} ---")
@@ -29,7 +29,7 @@ print(f"--- Debug: Desired Artifact Location Base: {artifact_location} ---")
 os.makedirs(mlruns_dir, exist_ok=True)
 
 # --- Configurar MLflow ---
-mlflow.set_tracking_uri(tracking_uri)
+mlflow.set_tracking_uri("file:///C:/Users/jhoan/Downloads/milflow-deploy/Taller_4/src/mlruns")
 
 # --- Crear o Establecer Experimento Explícitamente con Artifact Location ---
 experiment_name = "CI-CD-Lab2"
